@@ -184,3 +184,16 @@ print("---------------------------------------------------")
 
 'Sorting names on the basis of last characteres'
 print(sorted(['Jenish','Rosha','Roji','Mahesh','Indu','Kajal'],key=lambda x:x[-1]))
+
+
+print("---------------------------------------------------")
+Day=lambda today:today+1
+
+print(f"Day{Day(0)} of #100DaysofCoding")
+
+'shuffleing list using RANDOM'
+
+import random
+numList=[1,2,3,4,5,6,7,8,9]
+
+print(sorted(numList,key=lambda numList:random.random()))
