@@ -77,3 +77,7 @@ print(list(filter(lambda x:x<25,map(lambda y:y**2,l5))))
 
 print([x**2 for x in l5 if x**2<25])  #using list comprehension
 
+
+
+
+
