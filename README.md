@@ -4,8 +4,8 @@
 
 
 ☣️ Lockdown 2.0<br />
-  __Progress Till date:<br />
-   __ -Basic<br />
-   __-Unpacking iterables and non iterables i.e *args and **kwargs<br />
-   __-Higher order functions<br />
-  ___ Lambda ,Sorting<br />
+  Progress Till date:<br />
+     Basic<br />
+      Unpacking iterables and non iterables i.e *args and **kwargs<br />
+      Higher order functions<br />
+      Lambda ,Sorting<br />
