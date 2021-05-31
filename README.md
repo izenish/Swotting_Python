@@ -15,6 +15,7 @@
       Function introspection<br />
       Map,Zip,Filter<br />
       Reducing Functions<br />
+      Operator module<br/>
       
 
 
