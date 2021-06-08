@@ -1,0 +1,114 @@
+Python 3.9.5 (default, May 24 2021, 12:50:35) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.24.0 -- An enhanced Interactive Python. Type '?' for help.
+
+   ...: 
+   ...: a = Avg()
+   ...: print(a.add(10))
+   ...: print(a.add(20))
+   ...: print("________-")
+   ...: 
+   ...: 
+   ...: def averager():
+   ...:     numbers = []
+   ...: 
+   ...:     def add(number):
+   ...:         numbers.append(number)
+   ...:         total = sum(numbers)
+   ...:         count = len(numbers)
+   ...:         print(total/count)
+   ...: 
+   ...:     return add
+   ...: 
+   ...: 
+   ...: x = averager()
+   ...: print(type(x))
+   ...: x(100)
+   ...: x(200)
+   ...: 
+10.0
+15.0
+________-
+<class 'function'>
+100.0
+150.0
+
+In [2]: "this is junk"
+Out[2]: 'this is junk'
+
+In [3]: def averager():
+   ...:     numbers=[]
+   ...:     def plus(number):
+   ...:         numbers.append(number)
+   ...:         print(sum(numbers)/len(numbers))
+   ...:      return plus
+  File "<tokenize>", line 6
+    return plus
+    ^
+IndentationError: unindent does not match any outer indentation level
+
+
+In [5]: def averager():
+   ...:     numbers=[]
+   ...:     def plus(number):
+   ...:         numbers.append(number)
+   ...:         print(sum(numbers)/len(numbers))
+   ...: 
+
+In [6]: return plus
+  File "<ipython-input-6-c67557ca7134>", line 1
+    return plus
+    ^
+SyntaxError: 'return' outside function
+
+
+In [7]: def averager():
+   ...:     numbers=[]
+   ...:     def plus(number):
+   ...:         numbers.append(number)
+   ...:         print(sum(numbers)/len(numbers))
+   ...: 
+
+In [8]: return plus
+  File "<ipython-input-8-c67557ca7134>", line 1
+    return plus
+    ^
+SyntaxError: 'return' outside function
+
+
+In [9]: def averager():
+   ...:     numbers=[]
+   ...:     def plus(number):
+   ...:         numbers.append(number)
+   ...:         print(sum(numbers)/len(numbers))
+   ...:     return plus
+   ...: 
+
+In [10]: type(add)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-10-c13abc82b9b0> in <module>
+----> 1 type(add)
+
+NameError: name 'add' is not defined
+
+In [11]: type(plus)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-11-2754d707f5d7> in <module>
+----> 1 type(plus)
+
+NameError: name 'plus' is not defined
+
+In [12]: a=averager()
+
+In [13]: type(a)
+Out[13]: function
+
+In [14]: a(100)
+100.0
+
+In [15]: a(200)
+150.0
+
+In [16]: 
