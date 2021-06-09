@@ -42,3 +42,4 @@ print(emp2.printer())
 
 # we can also do the following by calling the class but the instance needs to be passed
 print(Employee.printer(emp2))
+print(Employee.__dict__)
