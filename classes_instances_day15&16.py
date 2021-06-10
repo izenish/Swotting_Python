@@ -43,3 +43,26 @@ print(emp2.printer())
 # we can also do the following by calling the class but the instance needs to be passed
 print(Employee.printer(emp2))
 print(Employee.__dict__)
+
+
+# Class variable
+class Employee:
+    raise_amt = 1.04
+
+    def __init__(self, first, last, salary):
+        self.first = first
+        self.last = last
+        self.salary = salary
+        self.email = self.first+'.'+self.last.lower()+'@company.com'
+
+    def printer(self):  # self must be there because instance is passed on its own automatically
+        return self.first, self.last, self.email
+
+    def apply_raise(self):
+        self.salary = int(self.salary*self.raise_amt)
+
+
+emp1 = Employee('Katana', 'Master', 30000)
+print(emp1.salary)
+emp1.apply_raise()
+print(emp1.salary)
