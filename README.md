@@ -15,7 +15,13 @@
       Function introspection<br />
       Map,Zip,Filter<br />
       Reducing Functions<br />
+      Partial Function <br/>
       Operator module<br/>
+      Global and Local Scopes<br/>
+      Nonlocal Scopes<br/>
+      Closures<br/>
+      Decorators<br/>
+    
       
 
 
