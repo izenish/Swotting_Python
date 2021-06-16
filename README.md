@@ -20,7 +20,7 @@
       Global and Local Scopes<br/>
       Nonlocal Scopes<br/>
       Closures<br/>
-      Decorators<br/>
+      Decorators-Logger,Stacked<br/>
     
       
 
