@@ -140,6 +140,7 @@ def timed(fn):
     return inner
 
 
+'''
 @timed
 def calc_recursive_fib(n):
     if n <= 2:
@@ -156,7 +157,7 @@ def fib_recursed(n):
     return calc_recursive_fib(n)
 
 
-print(fib_recursed(10))
+print(fib_recursed(10))'''
 
 '''Using Reduce
 We first need to understand how we are going to calculate the Fibonnaci sequence using reduce:
@@ -193,3 +194,34 @@ def fib_reduce(n):
 
 
 print(fib_reduce(40))
+
+
+def logger(fn):
+    from datetime import datetime
+    from functools import wraps, reduce
+
+    @wraps(fn)
+    def inner(*args, **kwargs):
+        current = datetime.now()
+        print(f"FUNCTION {fn.__name__} was called at {current}")
+        return fn(*args, **kwargs)
+    return inner
+
+
+@logger
+def sum(a, b):
+    return a+b
+
+
+print(sum(5, 6))
+
+# we can also do the following that is combining the both decorators
+
+
+@logger
+@timed  # this is equivalent to calling sum=logger(timed(sum))
+def sum(a, b):
+    return a+b
+
+
+print(sum(5, 60))
