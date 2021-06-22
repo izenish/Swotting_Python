@@ -1,1 +1,18 @@
 INFO:root:Ran with args:(99,), and kwargs:{}
+INFO:root:Ran with args:(99,), and kwargs:{} at :2021-06-22 21:12:20.273338
+INFO:root:Ran with args:(99,), and kwargs:{} at :2021-06-22 21:17:30.277895 took 4.4399999999999995e-05s to execite
+INFO:root:Ran with args:(9,), and kwargs:{} at :2021-06-22 21:17:52.454450 took 7.100000000037632e-06s to execite
+INFO:root:Ran with args:(9,), and kwargs:{} at :2021-06-22 21:20:11.080024 took  0.000s to execite
+INFO:root:Ran with args:(9,), and kwargs:{} at :2021-06-22 21:22:22.258551 took 0.000006s to execite
+INFO:root:Ran with args:(9,), and kwargs:{} at :2021-06-22 21:22:41.518831 took     0.0000s to execite
+INFO:root:Ran with args:(9,), and kwargs:{} at :2021-06-22 21:22:54.973294 took 0.000012s to execite
+INFO:root:Ran with args:(9,), and kwargs:{} at :2021-06-22 21:23:02.885221 took 0.000007s to execite
+INFO:root:Ran with args:(9,), and kwargs:{} at :2021-06-22 21:24:10.606718 took 0.000008s to execite
+INFO:root:Ran with args:(9,), and kwargs:{} at :2021-06-22 21:24:19.970500 took 0.000012s to execite
+INFO:root:Ran with args:(12154,), and kwargs:{} at :2021-06-22 21:25:31.449597 took 0.006399s to execite
+INFO:root:Ran with args:(986,), and kwargs:{} at :2021-06-22 21:26:38.668359 took 10.015795s to execite
+INFO:root:Ran with args:(986,), and kwargs:{} at :2021-06-22 21:26:49.964454 took 2.000408s to execite
+INFO:root:Ran with args:(9,), and kwargs:{} at :2021-06-22 21:27:03.146665 took 2.008179s to execite
+INFO:root:Ran with args:(9,), and kwargs:{} at :2021-06-22 21:28:02.192044 took 2.019695s to execite
+INFO:root:Function fib_reduce ran with args:(9,), and kwargs:{} at :2021-06-22 21:29:27.968474 took 2.011984s to execite
+INFO:root:Function (fib_reduce) ran with args:(9,), and kwargs:{} at :2021-06-22 21:30:05.214697 took 2.011620s to execite

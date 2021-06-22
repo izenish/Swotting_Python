@@ -30,6 +30,7 @@ my_func = func(my_func)
 
 
 from functools import wraps
+import time
 from typing import SupportsAbs
 def counter(fn):
     count = 0
@@ -226,14 +227,24 @@ def sum(a, b):
 
 print(sum(5, 60))
 
-
+'Logging time,args,kwargs into a .log file'
+'https://realpython.com/python-numbers/'
+'https://www.youtube.com/watch?v=FsAPt_9Bf3U'
 # actual logging
 def my_logger(org_func):
     import logging 
+    from time import perf_counter,sleep
+    from datetime import datetime
+
     logging.basicConfig(filename='Loged_{}.log'.format(org_func.__name__),level=logging.INFO)
 
     def wrapper(*args,**kwargs):
-        logging.info('Ran with args:{}, and kwargs:{}'.format(args,kwargs))
+        start=perf_counter()
+        time.sleep(2)
+        org_func(*args,**kwargs)
+        end=perf_counter()
+        logging.info('Function ({}) ran with args:{}, and kwargs:{} at :{} took {:2f}s to execite'.format(org_func.__name__,args,kwargs,datetime.now(),(end-start)))
+        
         return org_func(*args,**kwargs)
     
     return wrapper
@@ -248,5 +259,5 @@ def fib_reduce(n):
                    initial)
     return fib_n[0]
 
-print(fib_reduce(99))
+print(f'The factorial is {fib_reduce(9)}')
 
