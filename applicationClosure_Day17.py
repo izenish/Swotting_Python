@@ -12,8 +12,9 @@ print(counter1())
 counter1()
 print(counter1())
 
-
+from logger import log_this
 ########################
+@log_this
 def counter(fn):
     cnt = 0
 

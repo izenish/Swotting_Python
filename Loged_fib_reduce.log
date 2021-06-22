@@ -16,3 +16,4 @@ INFO:root:Ran with args:(9,), and kwargs:{} at :2021-06-22 21:27:03.146665 took 
 INFO:root:Ran with args:(9,), and kwargs:{} at :2021-06-22 21:28:02.192044 took 2.019695s to execite
 INFO:root:Function fib_reduce ran with args:(9,), and kwargs:{} at :2021-06-22 21:29:27.968474 took 2.011984s to execite
 INFO:root:Function (fib_reduce) ran with args:(9,), and kwargs:{} at :2021-06-22 21:30:05.214697 took 2.011620s to execite
+INFO:root:Function (fib_reduce) ran with args:(9,), and kwargs:{} at :2021-06-22 21:40:16.337578 took 0.000007s to execite

@@ -1,0 +1,2 @@
+INFO:root:Function (counter) ran with args:(<function add at 0x0000013F5BB9F1F0>,), and kwargs:{} at :2021-06-22 21:44:40.831548 took 0.000002s to execite
+INFO:root:Function (counter) ran with args:(<function mult at 0x0000013F5BEB71F0>,), and kwargs:{} at :2021-06-22 21:44:40.833542 took 0.000004s to execite
