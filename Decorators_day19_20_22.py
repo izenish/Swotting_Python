@@ -225,3 +225,28 @@ def sum(a, b):
 
 
 print(sum(5, 60))
+
+
+# actual logging
+def my_logger(org_func):
+    import logging 
+    logging.basicConfig(filename='Loged_{}.log'.format(org_func.__name__),level=logging.INFO)
+
+    def wrapper(*args,**kwargs):
+        logging.info('Ran with args:{}, and kwargs:{}'.format(args,kwargs))
+        return org_func(*args,**kwargs)
+    
+    return wrapper
+
+@my_logger
+def fib_reduce(n):
+    from functools import reduce
+    initial = (1, 0)
+    dummy = range(n-1)
+    fib_n = reduce(lambda prev, n: (prev[0] + prev[1], prev[0]),
+                   dummy,
+                   initial)
+    return fib_n[0]
+
+print(fib_reduce(99))
+
