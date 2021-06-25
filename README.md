@@ -25,4 +25,5 @@
       
 
 
-      
+    Work on parsing CSV's and contxtmanagers encountered error on both of these -2021/06/25
+    

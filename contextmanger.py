@@ -1,4 +1,4 @@
-class Open_file:
+# class Open_file:
 #     def __init__(self,filename,mode):
 #         self.filename=filename
 #         self.mode=mode
@@ -19,3 +19,18 @@ class Open_file:
 #     f.write('Testing')
 
 # print(f.closed)
+
+
+#using a function
+from contextlib import contextmanger
+
+@contectmanager
+def open_file(file,mode):
+    f=open(file,mode)
+    yield f.close()
+
+
+with open_file('SamepleTextWithContextLib','w') as f:
+    f.write('lorem ipsum dolor')
+
+print(f.closed)
