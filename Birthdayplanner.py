@@ -9,7 +9,7 @@ places=['Changu','PilotBaba','Nagarkot','Basantapur','Patan']
 
 pastery='cheeseCake'
 
-x=(random.choice(foods))
+x=(random.choice(foods),k=2)
 y=(random.choice(foods))
 z=(random.choice(places))
 
