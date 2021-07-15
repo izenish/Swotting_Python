@@ -197,3 +197,19 @@ import random
 numList=[1,2,3,4,5,6,7,8,9]
 
 print(sorted(numList,key=lambda numList:random.random()))
+
+
+''' we define a variable Money in the global namespace. Within the function Money,
+ we assign Money a value, therefore Python assumes Money as a local variable. However, 
+ we accessed the value of the local variable Money before setting it, so an UnboundLocalError is the result. 
+ Uncommenting the global statement fixes the problem.'''
+
+Money = 2000
+def AddMoney():
+   # Uncomment the following line to fix the code:
+#    global Money
+   Money = Money + 1
+
+print (Money)
+AddMoney()
+print (Money)
