@@ -126,3 +126,10 @@ print(a.shape)
 b=a.reshape((3,2))
 print(b)
 print(b.shape)
+print("-------------------------")
+
+'We can also use the axis method'
+a=np.arange(1,7)
+b=a[:,np.newaxis]
+print(b)
+print(b.shape)
