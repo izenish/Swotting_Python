@@ -100,3 +100,29 @@ print("-------------------------")
 a=np.array([[1,2],[3,3]])
 print(a)
 print(f"Number of rows,number of columns {a.shape}")
+
+'We can also Transform the matrix using mumpy'
+print(f'This is the transformed matrix A {a.T}')
+
+'Calculating Inverse'
+print(f'Using Lin calculate inverse {np.linalg.inv(a)}')
+
+'Fancy indexing'
+a=np.array([10,2,124,23,1,6])
+b=[1,3,5]
+print(a[b]) #so this only displayed the corresponding idexed values 
+
+"Only even numbers from the array"
+even=np.argwhere(a%2==0).flatten()
+print(a[even])
+
+'Reshaping arrays'
+a=np.array(range(1,7))
+#or
+a=np.arange(1,7)
+print(a)
+print(a.shape)
+'Transforming it into:'
+b=a.reshape((3,2))
+print(b)
+print(b.shape)
