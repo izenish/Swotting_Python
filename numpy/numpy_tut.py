@@ -1,4 +1,6 @@
 import numpy as np
+from time import perf_counter
+import random
 from numpy.core.fromnumeric import shape
 print(np.__version__)
 
@@ -40,14 +42,61 @@ print("-------------------------")
 
 l1=[1,2,3]
 l2=[3,4,5]
- #dot product the tedious
+ #dot product the cumbersome way;
 dot=0
-for i in range(len(l1)):
-     dot+=l1[i]*l2[i]
-print(dot)
+def cumbersome_dotproduct(l1,l2):
+     for i in range(len(l1)):
+          dot+=l1[i]*l2[i]
+     return (dot)
 
+def numpy_dotproduct(a,b):
+     return np.dot(a,b)
 'the same using numpy'
 a1=np.array([1,2,3])
 a2=np.array([3,4,5])
 dot=np.dot(a1,a2)
 print(dot)
+print("-------------------------")
+
+a=np.random.randn(1000)
+b=np.random.randn(1000)
+A=list(a)
+B=list(b)
+# print(b)
+
+
+'Speed TEST'
+def cumbersome_dotproduct(l1,l2):
+     dot=0
+     for i in range(len(l1)):
+          dot+=l1[i]*l2[i]
+     return (dot)
+
+def numpy_dotproduct(a,b):
+     return np.dot(a,b)
+
+   
+
+
+start=perf_counter()
+for x in range(1000):
+     cumbersome_dotproduct(A,B)
+end=perf_counter()
+cost=end-start
+r1=cost
+print(f"Using cumbersome method it took {cost} seconds")
+
+start=perf_counter()
+for x in range(1000):
+     numpy_dotproduct(A,B)
+end=perf_counter()
+cost=end-start
+print(f"Using numpy method it took {cost} seconds")
+
+print(f"Ratio is {r1/cost}")
+
+print("-------------------------")
+'Multi dimensional array'
+a=np.array([[1,2],[3,3]])
+print(a)
+print(f"Number of rows,number of columns {a.shape}")
