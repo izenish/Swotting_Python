@@ -1,29 +1,40 @@
-🔯Day 1:<br />
---Python Modules<br />
---Assignment on Bubble Sort✔<br /><br />
+# PythonCoreFundamentals
+Assignment I
+PROJECT 1: WARM UP
+
+Core concepts:
+
+PEP 8 and Documentation Strings
+Functions and Special Parameters
+Lambda Functions
+Data Structures:
+Stacks, Lists and Queue
+Comprehensions (List, Tuple, Set, Dictionary)
+Nested Comprehension (List, Tuple, Set, Dictionary)
+Sequence Unpacking
+Looping Techniques in Python
+Modules and Packages
+String Formatting Techniques
+CSV and JSON Data
+Handling Exception
+Scopes and Namespaces
+Classes
+Class and Instance Variables
+Private Variables
+Inheritance and Multiple Inheritance
+Map-Filter-Reduce
+Iterators
+Generators
+Decorators
+Logging
+Virtual Environments
+Dependency Management with PIP
+Debugging a buggy code
+Regular Expressions
 
 
-☣️ Lockdown 2.0<br />
-  Progress Till date:<br />
-     Basic<br />
-      Unpacking iterables and non iterables i.e *args and **kwargs<br />
-      Higher order functions<br />
-      Lambda ,Sorting<br />
-      Docstring,Annotations<br />
-      HigherOrder Functions<br />
-      Callable<br />
-      Function introspection<br />
-      Map,Zip,Filter<br />
-      Reducing Functions<br />
-      Partial Function <br/>
-      Operator module<br/>
-      Global and Local Scopes<br/>
-      Nonlocal Scopes<br/>
-      Closures<br/>
-      Decorators-Logger,Stacked<br/>
-    
-      
 
 
-    Work on parsing CSV's and contxtmanagers encountered error on both of these -2021/06/25
-    
+
+
+
